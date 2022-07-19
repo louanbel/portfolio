@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Projets - Louan Bélicaud</title>
+    <meta name="description"
+        content="En plus des projets d'études, j'ai réalisé de nombreux 'side projects' pour développer mes compétences en informatique." />
+    <meta name="keywords" content="" />
+
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="image/icon.png">
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="built/sc-projet.js"></script>
+    <script src="built/bubble.js"></script>
+    <script src="built/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- fiches css -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <!--<loading-bar></loading-bar>-->
+
+        <header>
+        </header>
+
+        <!-- menu de navigation réduit-->
+        <menu-burger></menu-burger>
+
+        <!-- menu de navigation-->
+        <nav-custom></nav-custom>
+
+
+        <!-- Contenu du site / main -->
+        <main>
+            <div class="staticWindow col-xl-11 px-0 col-11">
+                <div class="bordure d-flex flex-row align-items-center">
+                    <div id="r1"></div>
+                    <div id="r2"></div>
+                    <div id="r3"></div>
+                    <h1>Projets</h1>
+                </div>
+                <p class="ml-4 mb-0"><strong>function <span class="rouge">getProjets()</span></strong></p>
+                <span class="bleu ml-4">{</span>
+                <div class="insideWindowContent d-flex flex-column flex-nowrap">
+                    <article class="mb-4">
+                        <div class="call">
+                            <p class="mb-0">Projet</p>
+                            <span class="bleu">("</span>
+                            <h2 class="vert m-0" style="line-height: 1.5 !important;">Création du logiciel <a
+                                    target="_blank" class="lien"
+                                    href="https://www.figma.com/proto/TMUPCwwl0fqod2lMHBaSDr/Banking?node-id=155%3A2&scaling=min-zoom&page-id=0%3A1">
+                                    Banking</a>
+                            </h2><span class="bleu">",</span>
+                        </div>
+                        <span class="bleu mb-5">{</span>
+                        <p>rôle : <span class="bleu">"</span><span class="vert">Chef de projet</span><span
+                                class="bleu">"</span></p>
+                        <p>date : <span class="rouge">01/2021 - 07/2021</span></p>
+                        <p class="mb-0">description : <span class="bleu">"</span><span class="vert">Banking à pour
+                                objectif d'aider
+                                les étudiants à mieux gérer leur budget en proposant une analyse approfondie de leur
+                                compte ainsi qu'en les encourageants à moins dépenser dans certaines
+                                catégories</span><span class="bleu">"</span></p>
+                        <div class="outilsdiv outilsAv">
+                            <span class="outils">outils : </span>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="60" src="image/javafx.png" alt="javafx" title="javafx">
+                                <p>Javafx</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="60" src="image/java.png" alt="Java" title="Java">
+                                <p>Java</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'large')">
+                                <img width="60" src="image/sceneb.png" alt="Scene Builder" title="Scene Builder">
+                                <p>SceneBuilder</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="60" src="image/figma.png" alt="figma" title="figma">
+                                <p>Figma</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="60" src="image/git.png" alt="Git" title="Git">
+                                <p>Git</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="60" src="image/gitlab.png" alt="GitLab" title="GitLab">
+                                <p>GitLab</p>
+                            </div>
+                        </div>
+                        <p>acquis : <span class="bleu">["</span><span class="vert">Gestion de projet</span><span
+                                class="bleu">", "</span><span class="vert">Développement Logiciel</span><span
+                                class="bleu">", "</span><span class="vert">Esprit d'équipe</span><span
+                                class="bleu">"]</span></p>
+                        <div class="mb-4">
+                            <span class="code">maquette : </span>
+                            <button class="btn-secondary" id="print1">Afficher</button>
+                        </div>
+                        <div id="figma">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTMUPCwwl0fqod2lMHBaSDr%2FBanking%3Fnode-id%3D0%253A1"
+                                allowfullscreen></iframe>
+                        </div>
+                        <span class="bleu">});</span>
+                    </article>
+                    <article class="mb-4">
+                        <div class="call">
+                            <p class="mb-0">Projet</p>
+                            <span class="bleu">("</span>
+                            <h2 class="vert m-0" style="line-height: 1.5 !important;"><span class="vert">Création du
+                                    site
+                                </span><a target="_blank" class="lien" href="https://infolannion.com/f22/">Télétravail
+                                    &amp;
+                                    lien social</a>
+                            </h2><span class="bleu">",</span>
+                        </div>
+                        <span class="bleu mb-5">{</span>
+                        <p>rôle : <span class="bleu">"</span><span class="vert">Chef de projet</span><span
+                                class="bleu">"</span></p>
+                        <p>date : <span class="rouge">2020</span></p>
+                        <p class="mb-0">description : <span class="bleu">"</span><span class="vert">Site étudiant
+                                traitant de
+                                l'impact du télétravail sur le lien social</span><span class="bleu">"</span></p>
+                        <div class="outilsdiv outilsAv">
+                            <span class="outils">outils : </span>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="60" src="image/html.png" alt="HTML5" title="HTML5">
+                                <p>HTML5</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="60" src="image/css.png" alt="CSS3" title="CSS3">
+                                <p>CSS3</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'medium')">
+                                <img width="60" src="image/js.png" alt="JavaScript" title="JavaScript">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="60" src="image/jquery.png" alt="JQuery" title="JQuery">
+                                <p>JQuery</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="60" src="image/git.png" alt="Git" title="Git">
+                                <p>Git</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="60" src="image/gitlab.png" alt="GitLab" title="GitLab">
+                                <p>GitLab</p>
+                            </div>
+                        </div>
+                        <p>acquis : <span class="bleu">["</span><span class="vert">Sens de l'organisation</span><span
+                                class="bleu">", "</span><span class="vert">Respect des deadlines</span><span
+                                class="bleu">",
+                                "</span><span class="vert">Force de proposition</span><span class="bleu">"}</span></p>
+                        <p>nomination : <span class="bleu">"</span><span class="vert">Sélectionné lors du salon
+                                professionnel 'DUT Alors!'</span><span class="bleu">"</span></p>
+                        <span class="bleu">});</span>
+                    </article>
+                    <article class="mb-4">
+                        <div class="call">
+                            <p class="mb-0">Projet</p>
+                            <span class="bleu">("</span>
+                            <h2 class="vert m-0" style="line-height: 1.5 !important;"><span class="vert">Conception,
+                                    programmation
+                                    d'un transat électrique</span>
+                            </h2><span class="bleu">",</span>
+                        </div>
+                        <span class="bleu mb-5">{</span>
+                        <p>rôle : <span class="bleu">"</span><span class="vert">Développeur de système
+                                embarqué</span><span class="bleu">"</span></p>
+                        <p>date : <span class="rouge">2019</span></p>
+                        <p class="mb-0">description : <span class="bleu">"</span><span class="vert">Projet de lycéens
+                                dans le cadre du TPE
+                                de première</span><span class="bleu">"</span></p>
+                        <div class="outilsdiv outilsAv">
+                            <span class="outils">outils : </span>
+                            <div class="te" onclick="openBubble(this, 'medium')">
+                                <img width="60" src="image/sw.png" alt="SolidWorks" title="SolidWorks">
+                                <p>SolidWorks</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="60" src="image/trello.png" alt="Trello" title="Trello">
+                                <p>Trello</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="60" src="image/arduino.png" alt="Arduino" title="Arduino">
+                                <p>Arduino</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'medium')">
+                                <img width="60" src="image/fritzing.png" alt="Fritzing" title="Fritzing">
+                                <p>Fritzing</p>
+                            </div>
+                        </div>
+                        <p>acquis : <span class="bleu">["</span><span class="vert">Aisance à l'oral</span><span
+                                class="bleu">", "</span><span class="vert">Capacité d'adaptation</span><span
+                                class="bleu">",
+                                "</span><span class="vert">Force de proposition</span><span class="bleu">"}</span></p>
+                        <div class="mb-4">
+                            <span class="code">photo : </span>
+                            <button class="btn-secondary" id="print2">Afficher</button>
+                        </div>
+                        <div id="transat">
+                            <img src="image/transat.jpg" alt="Transat électrique" title="transat">
+                        </div>
+                        <span class="bleu">});</span>
+                    </article>
+                    <article class="mb-4">
+                        <div class="call">
+                            <p class="mb-0">Projet</p>
+                            <span class="bleu">("</span>
+                            <h2 class="vert m-0" style="line-height: 1.5 !important;"><span class="vert">Création et
+                                    gestion du
+                                    blog </span><a target="_blank" class="lien" href="https://passion-voile.fr">Passion
+                                    Voile</a>
+                            </h2><span class="bleu">",</span>
+                        </div>
+                        <span class="bleu mb-5">{</span>
+                        <p>rôle : <span class="bleu">"</span><span class="vert">Créateur</span><span
+                                class="bleu">"</span></p>
+                        <p>date : <span class="rouge">2018</span></p>
+                        <p class="mb-0">description : <span class="bleu">"</span><span class="vert">Passion Voile
+                                propose conseils et astuces pour progresser à la voile et pour devenir
+                                moniteur</span><span class="bleu">"</span></p>
+                        <p class="mb-0">vues : <span class="rouge">75 000</span></p>
+                        <div class="outilsdiv outilsAv">
+                            <span class="outils">outils : </span>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="60" src="image/html.png" alt="HTML5" title="HTML5">
+                                <p>HTML5</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="60" src="image/css.png" alt="CSS3" title="CSS3">
+                                <p>CSS3</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'medium')">
+                                <img width="60" src="image/js.png" alt="JavaScript" title="JavaScript">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="60" src="image/jquery.png" alt="JQuery" title="JQuery">
+                                <p>JQuery</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'medium')">
+                                <img width="60" src="image/wordpress.png" alt="Wordpress" title="Wordpress">
+                                <p>Wordpress</p>
+                            </div>
+                        </div>
+                        <p>acquis : <span class="bleu">["</span><span class="vert">Qualité de l'orthographe</span><span
+                                class="bleu">", "</span><span class="vert">Gestion avec CMS</span><span class="bleu">",
+                                "</span><span class="vert">Goût pour l'entrepreneuriat</span><span class="bleu">",
+                                "</span><span class="vert">Sens de l'autonomie</span><span class="bleu">", "</span><span
+                                class="vert">Sens de l'organisation</span><span class="bleu">"]</span></p>
+                        <div id="divRs">
+                            <span class="code">réseaux : </span>
+                            <div class="d-inline">
+                                <a target="_blank" href="https://facebook.com/passionvoilefr/"><img id="fb"
+                                        alt="facebook" src="image/facebook-blanc.png" width="50"></a>
+                                <a target="_blank" href="https://instagram.com/passionvoilefr/"><img id="ig"
+                                        alt="instagram" src="image/instagram-blanc.png" width="50"></a>
+                                <a target="_blank" href="https://twitter.com/passionvoilefr/"><img id="tw" alt="twitter"
+                                        src="image/twitter-blanc.png" width="50"></a>
+                            </div>
+                        </div>
+                        <span class="bleu">});</span>
+                    </article>
+                </div>
+                <span class="bleu ml-4">}</span>
+            </div>
+
+        </main>
+
+        <footer>
+        </footer>
+
+    </div>
+
+</body>

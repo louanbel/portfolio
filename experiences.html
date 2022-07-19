@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Expériences - Louan Bélicaud</title>
+    <meta name="description"
+        content="Dans le cadre de mes études et en dehors, j'ai réalisé de nombreux projets qui ont pu, pour certains, prendre de l'ampleur." />
+    <meta name="keywords" content="" />
+
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="image/icon.png">
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="built/sc-experiences.js"></script>
+    <script src="built/app.js"></script>
+    <script src="built/bubble.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- fiches css -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NTSMM2K');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTSMM2K" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container-fluid px-0">
+        <!--<loading-bar></loading-bar>-->
+
+        <header>
+        </header>
+
+        <!-- menu de navigation réduit-->
+        <menu-burger></menu-burger>
+
+        <!-- menu de navigation-->
+        <nav-custom></nav-custom>
+
+
+        <!-- Contenu du site / main -->
+        <main>
+            <div class="staticWindow col-xl-11 px-0 col-11">
+                <div class="bordure d-flex flex-row align-items-center">
+                    <div id="r1"></div>
+                    <div id="r2"></div>
+                    <div id="r3"></div>
+                    <h1>Expériences</h1>
+                </div>
+                <p class="ml-4 mb-0"><strong>function <span class="rouge">getExperiences()</span></strong></p>
+                <span class="bleu ml-4">{</span>
+                <div class="insideWindowContent d-flex flex-column flex-nowrap">
+                    <article class="mb-4">
+                        <div class="call">
+                            <p class="mb-0">Expérience</p>
+                            <span class="bleu">("</span>
+                            <h2 class="vert m-0" style="line-height: 1.5 !important;">Développeur Cypress &
+                                Front-end
+                            </h2><span class="bleu">",</span>
+                        </div>
+                        <span class="bleu mb-5">{</span>
+                        <p>entreprise : <span class="bleu">"</span><span class="vert">HelloWork</span><span
+                                class="bleu">"</span></p>
+                        <p>date : <span class="rouge">09/2021 - 09/2022</span></p>
+                        <p>lieu : <span class="bleu">"</span><span class="vert">Rennes - 35</span><span
+                                class="bleu">"</span></p>
+                        <p class="mb-0">missions : <span class="bleu">"</span><span class="vert">Développement front,
+                                automatisation de test e2e avec Cypress, travail en agilité avec SCRUM</span><span
+                                class="bleu">"</span></p>
+                        <p class="mb-0">qualités : <span class="bleu">["</span><span class="vert">Autonomie</span><span
+                                class="bleu">", "</span><span class="vert">Capacité d'adaptation</span><span
+                                class="bleu">", "</span><span class="vert">Travail en équipe</span><span
+                                class="bleu">"]</span></p>
+                        <aside class="progImg mb-3 outilsAv">
+                            outils :
+                            <div class="te" onclick="openBubble(this, 'medium')">
+                                <img width="50" src="image/typescript.png" alt="typescript" title="typescript">
+                                <p>Typescript</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'medium')">
+                                <img width="50" src="image/js.png" alt="javascript" title="javascript">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="50" src="image/redux.png" alt="javascript" title="redux">
+                                <p>Redux</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'medium')">
+                                <img width="50" src="image/lit.png" alt="LitElement" title="LitElement">
+                                <p>LitElement</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="50" src="image/cypress.png" alt="gitlab" title="gitlab">
+                                <p>Cypress</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="50" src="image/gitlab.png" alt="gitlab" title="gitlab">
+                                <p>Gitlab</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'small')">
+                                <img width="50" src="image/jira.png" alt="jira" title="jira">
+                                <p>Jira</p>
+                            </div>
+                            <div class="te" onclick="openBubble(this, 'normal')">
+                                <img width="50" src="image/slack.png" alt="Slack" title="Slack">
+                                <p>Slack</p>
+                            </div> <span class="bleu">;</span>
+                        </aside>
+
+                        <p class="mb-0">programme : <a class="lien"
+                                href="https://www.florianmonfort.info/ressources/r%C3%A9f%C3%A9rences/Programme%20DUT%20Informatique.pdf">voirProgramme()</a></p>
+                        <span class="bleu">});</span>
+                    </article>
+                    <article class="mb-4">
+                        <div class="call">
+                            <p class="mb-0">Experience</p>
+                            <span class="bleu">("</span>
+                            <h2 class="vert m-0" style="line-height: 1.5 !important;">Moniteur de voile
+                            </h2><span class="bleu">",</span>
+                        </div>
+                        <span class="bleu mb-5">{</span>
+                        <p>club : <span class="bleu">"</span><span class="vert">Base nautique de l'Ile
+                                Grande</span><span class="bleu">"</span></p>
+                        <p>date : <span class="rouge">09/2020 - 09/2022</span></p>
+                        <p>lieu : <span class="bleu">"</span><span class="vert">Ile Grande - 22</span><span
+                                class="bleu">"</span></p>
+                        <p>missions : <span class="bleu">"</span><span class="vert">Encadrant de stages loisir et
+                                perfectionnement, entraîneur d'une équipe de compétition</span><span class="bleu">"</span></p>
+                        <p>qualités : <span class="bleu">["</span><span class="vert">Organisation</span><span
+                                class="bleu">", "</span><span class="vert">Pédagogie</span><span class="bleu">",
+                                "</span><span class="vert">Altruisme</span><span class="bleu">", "</span><span
+                                class="vert">Créativité</span><span class="bleu">"]</span></p>
+                        <div class="mb-4">
+                            <span class="code d-inline-block">photos : </span>
+                            <button class="btn-secondary" id="print">Afficher</button>
+                        </div>
+
+                        <!-- ESPACE CAROUSEL -->
+                        <div id="carouselItems" class="carousel col-lg-7 col-10 slide ml-auto mr-auto"
+                            data-ride="carousel" data-interval="3000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselItems" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselItems" data-slide-to="1"></li>
+                                <li data-target="#carouselItems" data-slide-to="2"></li>
+                                <li data-target="#carouselItems" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="/image/louan-gréer-voile.jpg"><img class="d-block w-100"
+                                            src="image/louan-gréer-voile.jpg" alt="louan gréer une voile"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="/image/louan-stagiaire-optimist.jpg"><img class="d-block w-100"
+                                            src="image/louan-stagiaire-optimist.jpg"
+                                            alt="louan encadrant des stagiaires en optimist"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="/image/louan-briefing-voileux.jpg"><img class="d-block w-100"
+                                            src="image/louan-briefing-voileux.jpg"
+                                            alt="louan donnant un briefing à une équipe de voileux"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="/image/louan-cours-catamarans.jpg"><img class="d-block w-100"
+                                            src="image/louan-cours-catamarans.jpg"
+                                            alt="louan donnant un cours de catamarans"></a>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselItems" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselItems" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <span class="bleu">});</span>
+                    </article>
+                    <article class="mb-4">
+                        <div class="call">
+                            <p class="mb-0">Experience</p>
+                            <span class="bleu">("</span>
+                            <h2 class="vert m-0" style="line-height: 1.5 !important;">Fondateur d'une Junior Association
+                            </h2><span class="bleu">",</span>
+                        </div>
+                        <span class="bleu mb-5">{</span>
+                        <p>association : <span class="bleu">"</span><span class="vert">Moodie Gamers</span><span
+                                class="bleu">"</span></p>
+                        <p>date : <span class="rouge">11/2015 - 12/2016</span></p>
+                        <p>lieu : <span class="bleu">"</span><span class="vert">Trébeurden - 22</span><span
+                                class="bleu">"</span></p>
+                        <p>missions : <span class="bleu">"</span><span class="vert">L'association organise des
+                                salons
+                                du jeu vidéo, ayant pour objectif de proposer des consoles dernières générations aux
+                                jeunes ne pouvant pas les acquérir</span><span class="bleu">"</span></p>
+                        <p>qualités : <span class="bleu">["</span><span class="vert">Sens de
+                                l'entrepreneuriat</span><span class="bleu">", "</span><span
+                                class="vert">Convaincant</span><span class="bleu">",
+                                "</span><span class="vert">Gestion d'équipe</span><span class="bleu">", "</span><span
+                                class="vert">Leadership</span><span class="bleu">"]</span></p>
+                        <span class="bleu">});</span>
+                    </article>
+                </div>
+                <span class="bleu ml-4">}</span>
+            </div>
+
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+
+
+
+</body>

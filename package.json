@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "louan belicaud portfolio's",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedStormBT/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "louan bélicaud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RedStormBT/portfolio/issues"
+  },
+  "homepage": "https://github.com/RedStormBT/portfolio#readme"
+}
