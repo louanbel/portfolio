@@ -1,6 +1,6 @@
 jQuery(function () {
-    $("#figma0").hide();
     $("#figma").hide();
+    $("#figma0").hide();
     $("#transat").hide();
     $("#print0").on("click", function () {
         if ($(this).text() === "Afficher") {
