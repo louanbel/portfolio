@@ -1,6 +1,6 @@
 function load(): void {
-  setTimeout(opacityLoader, 3000);
-  setTimeout(displayContainer, 4500);
+  setTimeout(opacityLoader, 2000);
+  setTimeout(displayContainer, 3800);
 }
 
 function opacityLoader(): void {

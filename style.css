@@ -71,7 +71,7 @@ h1 {
 }
 
 .progress-value {
-  animation: load 3s normal forwards;
+  animation: load 2s normal forwards;
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
   background: #fff;
@@ -423,12 +423,16 @@ nav {
   z-index: 999;
 }
 
-.pt {
+.px {
   width: 4em !important;
 }
 
+.pt {
+  width: 5em !important;
+}
+
 .ps {
-  width: 6em !important;
+  width: 6.5em !important;
 }
 
 .pm {
@@ -447,6 +451,7 @@ nav {
   cursor: pointer;
 }
 
+.px p,
 .pg p,
 .pm p,
 .ps p,

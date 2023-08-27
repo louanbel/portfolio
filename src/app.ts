@@ -1,3 +1,4 @@
+
 jQuery(function () {
   let year: string = new Date().getFullYear().toString();
   document.getElementsByTagName(
@@ -85,8 +86,31 @@ window.customElements.define(
         <button id="b3" class="btn-success" onclick="window.location='formations.html';">getFormations()</button>
         <button id="b4" class="btn-success" onclick="window.location='projets.html';">getProjets()</button>
         <button id="b5" class="btn-success" onclick="window.location='contact.php';">getContact()</button>
-        <button id="b6" class="btn-success" onclick="window.open('doc/CV-louan-belicaud-2022.pdf')">getCV()</button>
+        <button id="b6" class="btn-success" onclick="window.open('doc/cv-louan-belicaud-2023.pdf')">getCV()</button>
     </nav>
+    `;
+    }
+  }
+);
+
+window.customElements.define(
+  "bubble-custom",
+  class extends HTMLElement {
+    connectedCallback() {
+      const getSize = this.getAttribute("size") || "getSize()";
+      const getText = this.getAttribute("text") || "getText()";
+      const getImage = this.getAttribute("image") || "getImage()";
+
+      this.innerHTML = `
+      <div class="te" onclick="openBubble(this, '${getSize}')">
+        <img
+          width="50"
+          src="${getImage}"
+          alt="${getText}"
+          title="${getText}"
+        />
+        <p>${getText}</p>
+      </div>
     `;
     }
   }

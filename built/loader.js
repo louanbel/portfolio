@@ -1,6 +1,6 @@
 function load() {
-    setTimeout(opacityLoader, 3000);
-    setTimeout(displayContainer, 4500);
+    setTimeout(opacityLoader, 2000);
+    setTimeout(displayContainer, 3800);
 }
 function opacityLoader() {
     document.getElementById("preloader").style.opacity = "0";

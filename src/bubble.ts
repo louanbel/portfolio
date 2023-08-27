@@ -1,4 +1,5 @@
 const CLASS_FOR_TYPE: Map<string, string> = new Map([
+  ["xx-small", "px"],
   ["x-small", "pt"],
   ["small", "ps"],
   ["normal", "pm"],
@@ -9,16 +10,19 @@ const CLASS_FOR_TYPE: Map<string, string> = new Map([
 function openBubble(div: HTMLElement, type: string): void {
   let className: string = CLASS_FOR_TYPE.get(type);
 
-  if ($(div).hasClass(className)) {
-    $(div).removeClass(className);
+  if(!className) {
+    console.error(`No class found for type: ${type}`);
+    return;
+  }
+
+  if (div.classList.contains(className)) {
+    div.classList.remove(className);
   } else {
-    $(div).addClass(className);
-    $(div)
-      .delay(5000)
-      .queue(function () {
-        // automatically close the bubble
-        $(div).removeClass(className);
-        $(div).dequeue();
-      });
+    div.classList.add(className);
+
+    setTimeout(() => {
+      // automatically close the bubble after 5000ms
+      div.classList.remove(className);
+    }, 5000);
   }
 }
