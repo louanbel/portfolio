@@ -13,6 +13,7 @@ body {
 html,
 body {
   height: 100%;
+  cursor: url("image/pointer.cur"), auto;
 }
 
 h2 {
@@ -103,6 +104,7 @@ h1 {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  cursor: url("image/link.cur"), auto;
 }
 
 /* -------- GESTION NAV INDEX --------- */
@@ -184,7 +186,7 @@ footer {
 }
 
 #r1 {
-  cursor: pointer;
+  cursor: url("image/link.cur"), auto;
   margin-left: 20px;
   background-color: #e85953;
 }
@@ -447,8 +449,12 @@ nav {
   width: 12em !important;
 }
 
+button, a {
+  cursor: url("image/link.cur"), auto !important;
+}
+
 .te:hover {
-  cursor: pointer;
+  cursor: url("image/link.cur"), auto;
 }
 
 .px p,
@@ -507,7 +513,7 @@ nav {
 
 .staticWindow .insideWindowContent p {
   word-break: normal !important;
-  margin-bottom: none !important;
+  margin-bottom: unset !important;
 }
 
 article > p,
@@ -642,7 +648,7 @@ textarea {
   height: 50px;
   transform: rotate(0deg);
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
+  cursor: url("image/link.cur"), auto;
   z-index: 100;
   margin-left: 20px;
   margin-top: 20px;
