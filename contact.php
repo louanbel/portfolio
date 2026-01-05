@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Contact - Louan Bélicaud</title>
-    <meta name="description" content="Pour toute offre d'emploi, question par rapport au site, à mon parcours, etc. N'hésite pas à passer par ce formulaire de contact." />
+    <meta name="description" content="Pour toute offre d’emploi ou question concernant le site, mon parcours, etc., n’hésite pas à passer par ce formulaire de contact." />
     <meta name="keywords" content="contact, louan belicaud" />
 
 
@@ -53,7 +53,6 @@ if (isset($_POST['submit'])) {
     $msg .= "E-Mail:\t" . $_POST['email'] . "\n";
     $msg .= "Profil:\t" . $_POST['profil'] . "\n";
     $msg .= "Message:\t\n" . $_POST['message'] . "\n\n";
-    //Pourait continuer ainsi jusqu'à la fin du formulaire
 
     if (mail("contact@louanbelicaud.fr", "Contact de : " . $_POST['email'], $msg)) {
         $message = '<div class="alert alert-success" role="alert">Votre mail a bien été envoyé !</div>';
@@ -69,7 +68,6 @@ if (isset($_POST['submit'])) {
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTSMM2K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="container-fluid px-0">
-        <!--<loading-bar></loading-bar>-->
 
         <header>
         </header>
@@ -93,8 +91,7 @@ if (isset($_POST['submit'])) {
                 <div class="insideWindowContent d-flex flex-column flex-nowrap">
                     <aside>
                         <span class="bleu">{</span>
-                        <p class="mt-3">email : <span class="bleu">"</span><a class="lien" href="mailto:contact@louanbelicaud.fr">louanbelicaud63@gmail.com</a><span class="bleu">";</span></p>
-                        <p>téléphone : <span class="rouge">07.87.19.56.50</span><span class="bleu">;</span></p>
+                        <p class="mt-3">email : <span class="bleu">"</span><a class="lien" href="mailto:contact@louanbelicaud.fr">contact@louanbelicaud.fr</a><span class="bleu">";</span></p>
                         <p>linkedin : <span class="bleu">"</span><a class="lien" href="https://linkedin.com/in/louan-belicaud/">linkedin.com/in/louan-belicaud/</a><span class="bleu">";</span></p>
                         <span class="bleu">}</span>
                     </aside>
